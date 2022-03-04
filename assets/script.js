@@ -31,13 +31,15 @@ function mostrarPosicao(position) {
 }
 
 function tratarSucesso(resposta) {
-    let tela = document.querySelector("main");
+    console(resposta.data);
 
-    tela.innerHTML = `
-    <p>Latitude:  ${position.coords.latitude}</p>
-    <p>Longitude:  ${position.coords.longitude}</p>
-    `;
+    // let tela = document.querySelector("main");
+
+    // tela.innerHTML = `
+    // <p>Latitude:  ${resposta.coords.latitude}</p>
+    // <p>Longitude:  ${resposta.coords.longitude}</p>
+    // `;
 }
 function tratarErro(resposta) {
-    alert("erro: ", resposta.status);
+    alert("erro: ", resposta);
 }
