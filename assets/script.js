@@ -20,14 +20,14 @@ function pegarLocalizacao(){
 }
 
 function mostrarPosicao(position) {
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
 
 
-    const promessa = axios.post(`api.openweathermap.org/data/2.5/weather?lat={${lat}}&lon={{{${lon}}}}&appid=pt&hl=pt-BR&u=https://home.openweathermap.org/f25110b0f83adb9f7c080ee182cd1d00`);    
+    const promessa = axios.post(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=f25110b0f83adb9f7c080ee182cd1d00`,{"lon":`${lon}`, "lat":`${lat}`});    
     
     promessa.then(tratarSucesso);
-    promessa.catch(tratarErro);
+   // promessa.catch(tratarErro);
 }
 
 function tratarSucesso(resposta) {
