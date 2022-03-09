@@ -1,15 +1,27 @@
 body {
+    width: 100wv;
+    height: 100hv;
+
     background-color: aquamarine;
 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    gap: 10px;
+    margin-top: 200px;
 }
-
 p {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 26px;
     font-weight: 700;
     
-    color: black;
+    color: #808080;
 }
