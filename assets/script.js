@@ -47,7 +47,7 @@ function mostrarDados(resposta) {
     <p>Sensação Térmica:  ${dadosClima.main.feels_like}º C</p>
     <p>Temperatura Máxima:  ${dadosClima.main.temp_max}º C</p>
     <p>Temperatura Mínima:  ${dadosClima.main.temp_min}º C</p>
-    <p>Humidade:  ${dadosClima.main.humidity}%</p>
+    <p>Umidade:  ${dadosClima.main.humidity}%</p>
     <p>Pressão Atmosférica:  ${dadosClima.main.pressure} hPa</p>
     <p class="id ${dadosClima.weather[0].id}">Condições Meteorológicas:  ${dadosClima.weather[0].description}</p>
     <p>Nuvens:  ${dadosClima.clouds.all}%</p>
